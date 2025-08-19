@@ -14,11 +14,8 @@ import matplotlib.pyplot as plt
 import random
 import joblib
 import math
-from IPython.display import display
 np.random.seed(42)
 random.seed(42)
-
-display(sales_df.head(), iot_daily.head())
 
 # --- Sales historical data (daily) ---
 start = datetime(2023,1,1)
@@ -78,7 +75,7 @@ iot_daily['date'] = pd.to_datetime(iot_daily['date'])
 
 print("Sales shape:", sales_df.shape)
 print("IoT daily shape:", iot_daily.shape)
-display(sales_df.head(), iot_daily.head())
+print(sales_df.head(), iot_daily.head())
 
 import matplotlib.pyplot as plt
 import seaborn as sns
