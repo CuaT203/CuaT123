@@ -14,8 +14,11 @@ import matplotlib.pyplot as plt
 import random
 import joblib
 import math
+from IPython.display import display
 np.random.seed(42)
 random.seed(42)
+
+display(sales_df.head(), iot_daily.head())
 
 # --- Sales historical data (daily) ---
 start = datetime(2023,1,1)
